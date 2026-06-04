@@ -1,20 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Amelia Kustusz - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Travel Agency</title>
+    <style>
+        body {
+	    cursor: url("image.png"), auto;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: grey;
+            text-align: left;
+            font-family: Chiller, sans-serif;
+	    font-size: 25px;
+        }
+ .info-box {
+            background: rgba(0, 0, 0, 0.6); /* Czarne tło z 60% przezroczystości */
+            width: 40%; /* Szerokość boxa */
+            border-radius: 10px; /* Zaokrąglone rogi */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Lekki cień */
+	  
+
+        }
+        h1 {
+            margin-top: centre; /* Odsunięcie nagłówka od góry */
+	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
+        }
+	h2 {
+	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
+	    margin-top: 20px; /* Odsunięcie nagłówka od lewej */
+	}
+
+.info-box a {
+	cursor: url("image.png"), auto;
+    	text-decoration: none; /* Usunięcie podkreślenia */
+    	color: inherit; /* Dziedziczenie koloru tekstu z rodzica */
+}
+
+.info-box a:hover {
+	background: rgba(255, 255, 255, 0.5);
+   	color: black; /* Zmiana koloru tekstu przy najechaniu */
+	transform: scale(1.1); /* Subtelne powiększenie */
+}
+
+	.nav-box {
+            background: rgba(0, 0, 0, 0.8); /* Trochę mniej przezroczysty */
+            width: 60%;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .nav-box a {
+	    cursor: url("image.png"), auto;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+	
+
+
+
+        .nav-box a:hover {
+            background: rgba(255, 255, 255, 0.5);
+	color: black; /* Zmiana koloru przy najechaniu */
+    transform: scale(1.1); /* Subtelne powiększenie */
+        }
+    </style>
 </head>
 <body>
-    <h1>Amelia Kustusz</h1>
 
-    <p>Studentka informatyki i twórczyni gier w Unreal Engine 5.</p>
+  <!-- Info -->  
+ <div class="info-box">
+	<a href="bop.html">
+        <h1>Ewelina Filipiak</h1>
+        <h2>Unreal Engine 5 Developer</h2>
+	</a>
+    </div>
 
-    <h2>Projekt</h2>
+<!-- Nawigacja -->
+    <div class="nav-box">
+        <a href="about.html">About</a>
+        <a href="bop.html">Last Travel Agency</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="contact.html">Contact</a>
+    </div>
 
-    <h3>Last Travel Agency</h3>
 
-    <p>
-        Immersyjna gra eksploracyjna z elementami horroru
-        stworzona w Unreal Engine 5.
-    </p>
+
 </body>
 </html>
