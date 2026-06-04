@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Travel Agency</title>
+    <style>
+        body {
+	    cursor: url("image.png"), auto;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: grey;
+            text-align: left;
+            font-family: Chiller, sans-serif;
+	    font-size: 25px;
+        }
+ .info-box {
+            background: rgba(0, 0, 0, 0.6); /* Czarne tło z 60% przezroczystości */
+            width: 40%; /* Szerokość boxa */
+            border-radius: 10px; /* Zaokrąglone rogi */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Lekki cień */
+	  
+
+        }
+        h1 {
+            margin-top: centre; /* Odsunięcie nagłówka od góry */
+	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
+        }
+	h2 {
+	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
+	    margin-top: 20px; /* Odsunięcie nagłówka od lewej */
+	}
+
+.info-box a {
+	cursor: url("image.png"), auto;
+    	text-decoration: none; /* Usunięcie podkreślenia */
+    	color: inherit; /* Dziedziczenie koloru tekstu z rodzica */
+}
+
+.info-box a:hover {
+	background: rgba(255, 255, 255, 0.5);
+   	color: black; /* Zmiana koloru tekstu przy najechaniu */
+	transform: scale(1.1); /* Subtelne powiększenie */
+}
+
+	.nav-box {
+            background: rgba(0, 0, 0, 0.8); /* Trochę mniej przezroczysty */
+            width: 60%;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .nav-box a {
+	    cursor: url("image.png"), auto;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+	
+
+
+
+        .nav-box a:hover {
+            background: rgba(255, 255, 255, 0.5);
+	color: black; /* Zmiana koloru przy najechaniu */
+    transform: scale(1.1); /* Subtelne powiększenie */
+        }
+
+.flicker {
+    animation: flicker 2.5s infinite;
+}
+
+@keyframes flicker {
+    0%   { opacity: 1; }
+    3%   { opacity: 0.2; }
+    6%   { opacity: 1; }
+    7%   { opacity: 0.3; }
+    8%   { opacity: 1; }
+    50%  { opacity: 1; }
+    52%  { opacity: 0.4; }
+    54%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.about-box {
+    background: rgba(0, 0, 0, 0.8);
+    width: 70%;
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+  
+}
+
+.about-box img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-right: 20px; /* Dodanie przestrzeni po prawej stronie zdjęcia */
+}
+
+.about-text {
+    color: white;
+    font-size: 30px;
+    padding-left: 20px; /* Dodanie przestrzeni po lewej stronie tekstu */
+    line-height: 1.5; /* Zwiększenie odstępu między wierszami */
+}
+
+.about-box a {
+    cursor: url("image.png"), auto;
+    color: white; /* Zmieniamy kolor na biały */
+    font-family: Chiller, sans-serif; /* Twoja czcionka */
+    font-size: 28px; /* Większy tekst */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    background: rgba(255, 255, 255, 0.2); /* Delikatne tło */
+    padding: 8px 16px; /* Trochę przestrzeni */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    transition: 0.3s; /* Efekt przy najechaniu */
+    display: inline-block; /* Zachowanie jak przycisk */
+    margin-top: 10px;
+}
+      
+    </style>
+</head>
+<body>
+
+  <!-- Info -->  
+ <div class="info-box">
+	<a href="bop.html">
+        <h1 class="flicker">Ewelina Filipiak</h1>
+        <h2 class="flicker">Unreal Engine 5 Developer</h2>
+	</a>
+    </div>
+
+<!-- Nawigacja -->
+    <div class="nav-box">
+        <a href="about.html">About</a>
+        <a href="bop.html">Last Travel Agency</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="contact.html">Contact</a>
+    </div>
+<!-- Sekcja "About" -->
+<div class="about-box">
+    <img src="oficjalna_foteczka.jpg" width="300" height="400">
+    <div class="about-text">
+        <p>Ewelina Filipiak - A graduate of a technical university in Computer Science, specializing in Mobile and Web Technologies.<br> She also completed a technical secondary school in tourism. As her engineering thesis project, she developed a game titled “Last Travel Agency.”<br>
+
+She is passionate about exploring worlds created in games such as The Witcher 3 (especially Toussaint from the Blood and Wine expansion), <br>Outriders (notably the icy caves), and Layers of Fear (particularly its constantly shifting corridors).
+
+Her goal is to become a Level Designer in order to create her own immersive worlds.</p>
+    </div>
+    </div>
+
+
+</body>
+</html>
