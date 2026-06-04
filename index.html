@@ -7,7 +7,7 @@
     <style>
         body {
 	    cursor: url("image.png"), auto;
-            background: url('Steamship_on_a_moonlit_night_(by_Ivan_Aivazovsky).jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
             color: grey;
             text-align: left;
@@ -72,6 +72,23 @@
 	color: black; /* Zmiana koloru przy najechaniu */
     transform: scale(1.1); /* Subtelne powiększenie */
         }
+
+.flicker {
+    animation: flicker 2.5s infinite;
+}
+
+@keyframes flicker {
+    0%   { opacity: 1; }
+    3%   { opacity: 0.2; }
+    6%   { opacity: 1; }
+    7%   { opacity: 0.3; }
+    8%   { opacity: 1; }
+    50%  { opacity: 1; }
+    52%  { opacity: 0.4; }
+    54%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
     </style>
 </head>
 <body>
@@ -79,8 +96,8 @@
   <!-- Info -->  
  <div class="info-box">
 	<a href="bop.html">
-        <h1>Ewelina Filipiak</h1>
-        <h2>Unreal Engine 5 Developer</h2>
+        <h1 class="flicker">Ewelina Filipiak</h1>
+        <h2 class="flicker">Unreal Engine 5 Developer</h2>
 	</a>
     </div>
 
