@@ -3,75 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Travel Agency</title>
+    <title>About</title>
     <style>
-        body {
-	    cursor: url("image.png"), auto;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: grey;
-            text-align: left;
-            font-family: Chiller, sans-serif;
-	    font-size: 25px;
-        }
- .info-box {
-            background: rgba(0, 0, 0, 0.6); /* Czarne tło z 60% przezroczystości */
-            width: 40%; /* Szerokość boxa */
-            border-radius: 10px; /* Zaokrąglone rogi */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Lekki cień */
-	  
-
-        }
-        h1 {
-            margin-top: centre; /* Odsunięcie nagłówka od góry */
-	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
-        }
-	h2 {
-	    margin-left: centre; /* Odsunięcie nagłówka od lewej */
-	    margin-top: 20px; /* Odsunięcie nagłówka od lewej */
-	}
-
-.info-box a {
-	cursor: url("image.png"), auto;
-    	text-decoration: none; /* Usunięcie podkreślenia */
-    	color: inherit; /* Dziedziczenie koloru tekstu z rodzica */
+       body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-.info-box a:hover {
-	background: rgba(255, 255, 255, 0.5);
-   	color: black; /* Zmiana koloru tekstu przy najechaniu */
-	transform: scale(1.1); /* Subtelne powiększenie */
+.about-container {
+    display: flex;
+    min-height: 100vh;
 }
 
-	.nav-box {
-            background: rgba(0, 0, 0, 0.8); /* Trochę mniej przezroczysty */
-            width: 60%;
-            padding: 15px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px auto;
-        }
+.about-image {
+    width: 45%;
+}
 
-        .nav-box a {
-	    cursor: url("image.png"), auto;
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            display: inline-block;
-            transition: 0.3s;
-        }
-	
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.about-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    box-sizing: border-box;
+}
 
+.about-content h1 {
+    font-size: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
 
-        .nav-box a:hover {
-            background: rgba(255, 255, 255, 0.5);
-	color: black; /* Zmiana koloru przy najechaniu */
-    transform: scale(1.1); /* Subtelne powiększenie */
-        }
+.about-content p {
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 700px;
+}
 
 .flicker {
     animation: flicker 2.5s infinite;
@@ -100,63 +76,43 @@
   
 }
 
-.about-box img {
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    margin-right: 20px; /* Dodanie przestrzeni po prawej stronie zdjęcia */
-}
-
-.about-text {
-    color: white;
-    font-size: 30px;
-    padding-left: 20px; /* Dodanie przestrzeni po lewej stronie tekstu */
-    line-height: 1.5; /* Zwiększenie odstępu między wierszami */
-}
-
-.about-box a {
-    cursor: url("image.png"), auto;
-    color: white; /* Zmieniamy kolor na biały */
-    font-family: Chiller, sans-serif; /* Twoja czcionka */
-    font-size: 28px; /* Większy tekst */
-    text-decoration: none; /* Usunięcie podkreślenia */
-    background: rgba(255, 255, 255, 0.2); /* Delikatne tło */
-    padding: 8px 16px; /* Trochę przestrzeni */
-    border-radius: 5px; /* Zaokrąglone rogi */
-    transition: 0.3s; /* Efekt przy najechaniu */
-    display: inline-block; /* Zachowanie jak przycisk */
-    margin-top: 10px;
-}
       
     </style>
 </head>
 <body>
 
   <!-- Info -->  
- <div class="info-box">
-	<a href="bop.html">
-        <h1 class="flicker">Ewelina Filipiak</h1>
-        <h2 class="flicker">Unreal Engine 5 Developer</h2>
-	</a>
+ <div class="about-container">
+
+    <div class="about-image">
+        <img src="1024px-William_Blake_The_Ghost_of_Flea_1819-20_Tempera_&_gold_on_mahogany">
     </div>
 
-<!-- Nawigacja -->
-    <div class="nav-box">
-        <a href="about.html">About</a>
-        <a href="bop.html">Last Travel Agency</a>
-	<a href="gallery.html">Gallery</a>
-	<a href="contact.html">Contact</a>
-    </div>
-<!-- Sekcja "About" -->
-<div class="about-box">
-    <img src="oficjalna_foteczka.jpg" width="300" height="400">
-    <div class="about-text">
-        <p>Ewelina Filipiak - A graduate of a technical university in Computer Science, specializing in Mobile and Web Technologies.<br> She also completed a technical secondary school in tourism. As her engineering thesis project, she developed a game titled “Last Travel Agency.”<br>
+    <div class="about-content">
 
-She is passionate about exploring worlds created in games such as The Witcher 3 (especially Toussaint from the Blood and Wine expansion), <br>Outriders (notably the icy caves), and Layers of Fear (particularly its constantly shifting corridors).
+        <h1>ABOUT</h1>
 
-Her goal is to become a Level Designer in order to create her own immersive worlds.</p>
+        <p>
+            I am a Computer Science graduate specializing in Mobile and Web Technologies.
+            I also graduated from a tourism-focused technical secondary school.
+            As my engineering thesis project, I developed a game titled
+            <i>Last Travel Agency</i>.
+        </p>
+
+        <p>
+            I am passionate about exploring worlds created in games such as
+            <i>The Witcher 3</i> (especially Toussaint from the Blood and Wine expansion),
+            <i>Outriders</i> (particularly its icy caves), and
+            <i>Layers of Fear</i> (especially its constantly shifting corridors).
+        </p>
+
+        <p>
+            My goal is to become a Level Designer and create immersive worlds of my own.
+        </p>
+
     </div>
-    </div>
+
+</div>
 
 
 </body>
