@@ -79,6 +79,13 @@ body{
     transform:translateY(-5px);
     transition:0.3s;
 }
+.project-card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+    
 </style>
 </head>
 <body>
@@ -92,7 +99,7 @@ body{
     <div class="projects-grid">
 
         <div class="project-card">
-            <img src="images/travel-agency.jpg" alt="Last Travel Agency">
+            <img src="parter.jpg" alt="Last Travel Agency">
 
             <div class="project-content">
                 <h2>Last Travel Agency</h2>
@@ -112,22 +119,24 @@ body{
                 <h2>Gnomoville</h2>
 
                 <p>
-                    Stylized 3D game developed in Unity.
+                    Stylized 3D game developed in Unreal Engine.
                     Responsible for modeling, level design and
                     gameplay implementation.
                 </p>
             </div>
         </div>
 
-        <div class="project-card">
-            <img src="images/titanic.jpg" alt="Titanic">
+        <video controls poster="images/titanic-thumbnail.jpg">
+        <source src="videos/titanic.mp4" type="video/mp4">
+    </video>
+
 
             <div class="project-content">
                 <h2>Titanic</h2>
 
                 <p>
-                    Interactive cinematic project focused on storytelling,
-                    animation and visual presentation.
+A handcrafted stop-motion animation retelling key moments from the 1997 film *Titanic*. All characters were sculpted from modeling clay and animated frame by frame. The project required planning, scene composition, animation, cinematography, and post-production editing, showcasing both artistic and technical skills in visual storytelling.
+
                 </p>
             </div>
         </div>
