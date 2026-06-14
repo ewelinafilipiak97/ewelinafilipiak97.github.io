@@ -50,9 +50,16 @@ body{
 
 .project-card{
     background:#000;
+    overflow:hidden;
 }
 
-.project-card img{
+.project-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.project-card img,
+.project-card video{
     width:100%;
     height:220px;
     object-fit:cover;
@@ -74,19 +81,8 @@ body{
     line-height:1.5;
     font-size:1rem;
 }
-
-.project-card:hover{
-    transform:translateY(-5px);
-    transition:0.3s;
-}
-.project-card video{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    display:block;
-}
-    
 </style>
+
 </head>
 <body>
 
@@ -98,7 +94,9 @@ body{
 
     <div class="projects-grid">
 
+        <!-- LAST TRAVEL AGENCY -->
         <div class="project-card">
+
             <img src="parter.jpg" alt="Last Travel Agency">
 
             <div class="project-content">
@@ -106,39 +104,59 @@ body{
 
                 <p>
                     Atmospheric horror game created in Unreal Engine.
-                    Focused on environmental storytelling, lighting and
-                    immersive exploration.
+                    Focused on environmental storytelling, lighting,
+                    and immersive exploration.
                 </p>
             </div>
+
         </div>
 
-        <div class="project-card">
-            <img src="images/gnomoville.jpg" alt="Gnomoville">
+ 
+        <!-- GNOMOVILLE -->
+<div class="project-card">
 
-            <div class="project-content">
-                <h2>Gnomoville</h2>
-
-                <p>
-                    Stylized 3D game developed in Unreal Engine.
-                    Responsible for modeling, level design and
-                    gameplay implementation.
-                </p>
-            </div>
-        </div>
-
-        <video controls poster="images/titanic-thumbnail.jpg">
-        <source src="videos/titanic.mp4" type="video/mp4">
+    <video controls onclick="this.requestFullscreen();">
+        <source src="videos/gnomoville_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
 
+    <div class="project-content">
+        <h2>Gnomoville</h2>
+
+        <p>
+            Stylized 3D game developed in Unreal Engine.
+            Responsible for modeling, level design,
+            and gameplay implementation.
+        </p>
+    </div>
+
+</div>
+
+        <!-- TITANIC -->
+        <div class="project-card">
+
+            <video controls onclick="this.requestFullscreen();">
+                <source src="videos/titanic.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
             <div class="project-content">
                 <h2>Titanic</h2>
 
                 <p>
-A handcrafted stop-motion animation retelling key moments from the 1997 film *Titanic*. All characters were sculpted from modeling clay and animated frame by frame. The project required planning, scene composition, animation, cinematography, and post-production editing, showcasing both artistic and technical skills in visual storytelling.
-
+                    A handcrafted stop-motion animation inspired by the 1997 film Titanic.
+                    All characters were sculpted from modeling clay and animated frame by frame.
+                    The project involved scene composition, animation, cinematography,
+                    and post-production editing, showcasing both artistic and technical
+                    storytelling skills.
                 </p>
             </div>
+
         </div>
 
     </div>
+
+</section>
+
+</body>
+</html>
